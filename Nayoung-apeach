@@ -1,14 +1,39 @@
-[Swith : study with books](https://github.com/Swith-Me) 
+# 0. 들어가면서 
 
-# 0. 들어가면
-
-- 난관에 부딪힐 때 옳은 문 뒤에 있으려면 **장인 정신**이 필요하다.
-
-    장인정신을 익히는 과정은 두 단계로 나뉜다. 
-
-    1. 이론 : 장인에게 필요한 원칙, 패턴, 기법, 경험이라는 지식을 습득해야 한다. 
-    2. 실전 : 열심히 일하고 연습해 지식을 몸과 마음으로 체득해야 한다. 
-
-- 기억에 남는 구절 📖
-
-    > 이 책이 그저 "기분 좋은 책"으로 머물지 않기를 바란다. 손으로 몸으로 마음으로 익히기 바란다. 자전거 타는 법에 능숙해지면 자전거가 몸의 일부처럼 움직이듯이, 이 책을 철저히 익혀 자신의 일부처럼 활용하기 바란다.
+- 난관에 부딪힐 때 옳은 문 뒤에 있으려면 <span style="color:red">장인 정신</span>이 필요하다.
+    - django-admin startproject config .
+    - python manage.py migrate
+    - python manage.py createsuperuser
+    - python manage.py runserver
+- bookmark 앱 시작
+  - python manage.py startapp bookmark
+  - 'bookmark', in INSTALLED_APPS
+- bookmark/models Bookmark
+  - python manage.py makemigrations bookmark
+  - python manage.py migrate
+  - \_\_str\_\_()
+- bookmark/admin Bookmark
+- List Bookmark
+  - bookmark/views BookmarkListView
+  - bookmark/templates/bookmark bookmark_list.html
+  - urls; bookmark/urls bookmark:list
+- Add Bookmark 
+  - bookmark/views BookmarkCreateView
+  - bookmark/templates/bookmark bookmark_create.html, bookmark_list.html
+  - bookmark/urls bookmark:add
+- Bookmark Detail
+  - bookmark/views BookmarkDetailView
+  - bookmark/templates/bookmark_detail.html, bookmark_list.html
+  - bookmark/urls bookmark:detail
+  - bookmark/views BookmarkUpdateView
+- Update Bookmark
+  - bookmark/views BookmarkUpdateView
+  - bookmark/templates/bookmark bookmark_update.html,bookmark_list.html
+  - bookmark/urls bookmark:update
+  - bookmark/models get_absolute_url() in Bookmark
+- Delete Bookmark
+  - bookmark/urls BookmarkDeleteView
+  - bookmark/templates/bookmark bookmark_confirm_delete.html, bookmark_list.html
+  - bookmark/urls bookmark:delete
+- 기능완성😎🧠👨‍💻👩‍💻
+- config/templates/base.html, extends, block title, block content
