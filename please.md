@@ -28,7 +28,8 @@
     1. 나쁜 코드는 개발 속도를 크게 떨어뜨린다.
     2. 나쁜 코드가 쌓일수록 생산성은 떨어진다. (아래 그림참조)
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1a3c74a6-02c0-4a30-9180-e77ea748c019/time.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1a3c74a6-02c0-4a30-9180-e77ea748c019/time.png)
+   ![time](https://user-images.githubusercontent.com/54364763/125192074-ce506a80-e280-11eb-847a-4a524f100ac7.png)
+
 
     👩‍💻 개발 속도를 늦추지 않기 위한 방법은 코드를 **최대한 깨끗하게 유지하는 습관이다.** 
 
